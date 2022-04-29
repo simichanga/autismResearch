@@ -3,7 +3,8 @@ A condition that needs a lot of care, autism is largely misunderstood, especiall
 Imagination of children with ASDs is captive with no way to be expressed, having difficulties in developing
 an understanding of spoken language so they resort to nonverbal communication. 
 
-
+>> This research paper aims to study patterns in cognitive behavior of people with ASD to see if we can facilitate them with better 
+means of education through Game Theory.
 In this field of study there are limited resources dedicated to autism, especially for children,
 that's why we're aiming with this research paper to study patterns in cognitive behavior of people
 with ASD to see if we can facilitate them with better means of education through Game Theory.
