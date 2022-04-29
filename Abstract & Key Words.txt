@@ -17,4 +17,4 @@ a better understanding of them. Besides this, the program can help in improving 
 and find a better way to communicate ideas and emotions.
 
 Key Words:
-ASD, children, communication, ai, neural networks, graph theory
+ASD, children, communication, AI, neural networks, graph theory, game theory 
