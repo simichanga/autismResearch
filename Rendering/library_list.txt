@@ -1,0 +1,4 @@
+# cat /tmp/library_list.txt
+
+pyrender
+trimesh
