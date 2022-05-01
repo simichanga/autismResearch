@@ -36,7 +36,7 @@ class MainWindow(QMainWindow):
 
 picture= """
     MainWindow {
-        background-image: url("C:/Users/Alexa/Desktop/random/neural.png");
+        background-image: url("C:/Users/Alexa/Documents/GitHub/autismResearch/interface/neural.png");
         background-repeat: no-repeat;
         background-position: center;
     }
