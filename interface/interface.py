@@ -39,7 +39,7 @@ class MainWindow(QMainWindow):
         self.button1.setMinimumWidth(150)
         self.button1.setFont(QFont("Arial", 15))
         self.button1.setStyleSheet("background-color: 	#191970")
-        #self.button1.clicked.connect(self.speech)
+        #self.button1.clicked.connect(speech)
         
         self.button2.setText("Press Here To Write")
         self.button2.setFont(QFont("Arial", 15))
@@ -53,7 +53,7 @@ class MainWindow(QMainWindow):
         
         grid.addWidget(self.button1, 0, 0, QtCore.Qt.AlignLeft | QtCore.Qt.AlignBottom)
         grid.addWidget(self.button2, 0, 1, QtCore.Qt.AlignRight | QtCore.Qt.AlignBottom)
-        grid.addWidget(self.button3, 1, 0, QtCore.Qt.AlignCenter | QtCore.Qt.AlignBottom)
+        grid.addWidget(self.button3, 0, 1, QtCore.Qt.AlignCenter | QtCore.Qt.AlignCenter)
 
     def show_new_window(self, checked):
         if self.w is None:
