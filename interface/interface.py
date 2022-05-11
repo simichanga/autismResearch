@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from random import randint
-#import index
+import index
 #import speech
 import sys
 
@@ -49,9 +49,7 @@ class MainWindow(QMainWindow):
         self.button3.setText("Press Here To Start The Game")
         self.button3.setFont(QFont("Arial",15))
         self.button3.setStyleSheet("background-color: #6495ED")
-        if self.button3.clicked == True:
-        #self.button3.clicked.connect(self.show_new_window)
-            import index
+        self.button3.clicked.connect(self.show_new_window)
         
         grid.addWidget(self.button1, 0, 0, QtCore.Qt.AlignLeft | QtCore.Qt.AlignBottom)
         grid.addWidget(self.button2, 0, 1, QtCore.Qt.AlignRight | QtCore.Qt.AlignBottom)
