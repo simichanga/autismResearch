@@ -24,5 +24,4 @@ def speech_test():
             recognizer = speech_recognition.Recognizer()
             continue
 
-
 speech_test()
