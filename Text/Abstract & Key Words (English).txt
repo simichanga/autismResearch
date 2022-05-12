@@ -1,0 +1,15 @@
+Abstract:
+A condition that needs a lot of care, autism is largely misunderstood, especially at a young age. 
+Imagination of children with ASDs is captive with no way to be expressed, having difficulties in developing
+an understanding of spoken language so they resort to nonverbal communication. 
+
+This research paper aims to study patterns in cognitive behavior of people with ASD to see if we can facilitate 
+them with better means of education through Game Theory. To support the research we implemented neural networks 
+to see if/ how much people with ASDs can benefit from such an approach. By developing a program like this we want 
+to also help medical professionals with a better understanding of them. Besides this, the program can help in 
+improving their communication skills /and find a better way to communicate ideas and emotions.
+
+
+
+Key Words:
+ASD, children, communication, AI, neural networks, graph theory, game theory 

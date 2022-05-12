@@ -1,10 +1,12 @@
 import trimesh
 import pyrender
+import numpy as np
 
-fuze_trimesh = trimesh.load("Crate1/Crate1.obj")
-mesh = pyrender.Mesh.from_trimesh(fuze_trimesh)
-# mesh = trimesh.load_mesh('humanModel/humanModel.obj', process=False)
+tm = trimesh.load('MaleLow.obj')
+m = pyrender.Mesh.from_trimesh(tm)
+m.primitives
+
 scene = pyrender.Scene()
-scene.add(mesh)
+scene.add(m)
 
-pyrender.Viewer(scene, use_raymond_lighting=True)
+pyrender.Viewer(scene, use_raymond_lighting = True)
