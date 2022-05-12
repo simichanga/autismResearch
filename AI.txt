@@ -9,8 +9,9 @@ AI will transform the lives of people with ASD.
 
 
 Through this application, we want to facilitate the communication of children with autism and to better understand their feelings and experiences.
-We want to build a chatbot with real time face emotion recognition through AI, so that it is easier to follow the reactions and responses of the child with ASD.
-Also, the communication of the affected child with the chatbot can be done in 2 ways: by writing or through speech recognition.
+We want to build a chatbot with real time face emotion recognition through AI in Python, so that it is easier to follow the reactions and responses of the child with ASD.
+Also, the communication of the affected child with the chatbot can be done in 2 ways: by writing or through speech recognition. By speech recognition we want to improve the speech of the child with autism but there is also the possibility to use the keyboard 
+to communicate with the chatbot.
 We have included in this application a sum game called "Guess the Word" through which we want to track the user's reactions to different words in various categories. If he guesses the word, he will receive 5 points each.
 By making available at this time the following categories of words: animals, body parts, colors, fruits, shapes, vegetables, vehicles we want to extend these with certain events in children's lives that made them feel good like birthday cake, gifts.
 
