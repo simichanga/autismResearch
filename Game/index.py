@@ -25,6 +25,9 @@ def start_main_page():
         elif args == 7:
             from Options import Vehicles
             Vehicles.main()
+        elif args == 8:
+            from Options import Random
+            Random.main()
 
     def option():
 
@@ -113,6 +116,16 @@ def start_main_page():
             cursor="hand2",
             command=lambda: start_game(7),
         )
+        sel_btn8 = Button(
+            text="Random",
+            width=18,
+            borderwidth=8,
+            font=("", 18),
+            fg="#000000",
+            bg="#99ffd6",
+            cursor="hand2",
+            command=lambda: start_game(8),
+        )
         lab_img1.grid(row=0, column=0, padx=20)
         sel_btn1.grid(row=0, column=4, pady=(10, 0), padx=50, )
         sel_btn2.grid(row=1, column=4, pady=(10, 0), padx=50, )
@@ -121,6 +134,7 @@ def start_main_page():
         sel_btn5.grid(row=4, column=4, pady=(10, 0), padx=50, )
         sel_btn6.grid(row=5, column=4, pady=(10, 0), padx=50, )
         sel_btn7.grid(row=6, column=4, pady=(10, 0), padx=50, )
+        sel_btn8.grid(row=7, column=4, pady=(10, 0), padx=50, )
 
     def show_option():
         start_btn.destroy()
@@ -130,7 +144,7 @@ def start_main_page():
 
     main_window = Tk()
 
-    main_window.geometry("500x500+500+150")
+    main_window.geometry("550x550+500+150")
     main_window.resizable(0, 0)
     main_window.title("Guess the Word")
     main_window.configure(background="#e6fff5")

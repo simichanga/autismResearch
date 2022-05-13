@@ -3,17 +3,12 @@ from random import *
 from tkinter import messagebox
 import time
 
-COLOUR_WORD = ['DRE', 'OELLYW', 'LBEU', 'ERGNE', 'OREAGN', 'RPEULP',
-               'EMIL', 'ORWBN', 'NYAV', 'PNIK', 'LDGO', 'VRLSEI',
-               'BLKAC', 'HTWIE', ]
+RANDOM_WORD = ['MMO', 'DDA', 'AKCE', 'GFTI', 'ARPTY' ]
 
-COLOUR_ANSWER = ['RED', 'YELLOW', 'BLUE', 'GREEN', 'ORANGE',
-                 'PURPLE', 'LIME', 'BROWN', 'NAVY', 'PINK', 'GOLD',
-                 'SILVER', 'BLACK', 'WHITE', ]
+RANDOM_ANSWER = ['MOM', 'DAD', 'CAKE', 'GIFT', 'PARTY']
 
-
-ran_num = randrange(0, (len(COLOUR_WORD)))
-jumbled_rand_word = COLOUR_WORD[ran_num]
+ran_num = randrange(0, (len(RANDOM_WORD)))
+jumbled_rand_word = RANDOM_WORD[ran_num]
 
 points = 0
 
@@ -26,20 +21,20 @@ def main():
 
     def change():
         global ran_num
-        ran_num = randrange(0, (len(COLOUR_WORD)))
-        word.configure(text=COLOUR_WORD[ran_num])
+        ran_num = randrange(0, (len(RANDOM_WORD)))
+        word.configure(text=RANDOM_WORD[ran_num])
         get_input.delete(0, END)
         ans_lab.configure(text="")
 
     def cheak():
         global points, ran_num
         user_word = get_input.get().upper()
-        if user_word == COLOUR_ANSWER[ran_num]:
+        if user_word == RANDOM_ANSWER[ran_num]:
             points += 5
             score.configure(text="Score: " + str(points))
             messagebox.showinfo('correct', "Correct Answer.. Keep it Up!")
-            ran_num = randrange(0, (len(COLOUR_WORD)))
-            word.configure(text=COLOUR_WORD[ran_num])
+            ran_num = randrange(0, (len(RANDOM_WORD)))
+            word.configure(text=RANDOM_WORD[ran_num])
             get_input.delete(0, END)
             ans_lab.configure(text="")
         else:
@@ -52,14 +47,14 @@ def main():
             points -= 5
             score.configure(text="Score: " + str(points))
             time.sleep(0.5)
-            ans_lab.configure(text=COLOUR_ANSWER[ran_num])
+            ans_lab.configure(text=RANDOM_ANSWER[ran_num])
         else:
             ans_lab.configure(text='Not enough points')
 
     my_window = Tk()
     my_window.geometry("500x500+500+150")
     my_window.resizable(0, 0)
-    my_window.title("Guess the Word Game")
+    my_window.title("Guest the Word Game")
     my_window.configure(background="#e6fff5")
     img1 = PhotoImage(file="back.png")
 
@@ -87,7 +82,7 @@ def main():
         pady=10,
         bg="#e6fff5",
         fg="#000000",
-        font="Titillium  30 bold"
+        font="Titillium  50 bold"
     )
     word.pack()
 
