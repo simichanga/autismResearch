@@ -5,8 +5,8 @@ from deepface import DeepFace ## pip install deepface
 
 img = cv2.imread('image.jpg')
 
-plt.imgshow(img) ## by default BGR
-plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB) ## converted to RGB
+plt.imshow(img) ## by default BGR
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)) ## converted to RGB
 
 predictions = DeepFace.analyze(img)
 
