@@ -16,7 +16,7 @@ while True:
 
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	# print(faceCascade.empty())
-	faces = faceCascade.detectMultiscale(gray, 1.1, 4)
+	faces = faceCascade.detectMultiScale(gray, 1.1, 4)
 
 	# Draw a rectangle around the faces
 	for(x, y, w, h) in faces:
